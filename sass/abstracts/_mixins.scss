@@ -1,0 +1,9 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+
+@mixin bg {
+  background-color: $color-primary;
+  color: $color-secondary;
+}

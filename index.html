@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <title>Sign In</title>
+  </head>
+  <body class="body">
+    <main class="signIn__container">
+      <div class="signIn">
+        <div class="signIn__title">
+          <h1 class="signIn__title-heading">Martville Administration</h1>
+        </div>
+        <div class="signIn__form">
+          <img src="./image/logo.png" alt="Logo" class="logo" />
+          <h2 class="signIn__form-heading">Sign in</h2>
+          <form action="" class="form">
+            <label for="fname">SAP ID*</label>
+            <input type="text" id="fname" name="firstname" />
+
+            <label for="pwd">Password*</label>
+            <div class="form__pswd">
+              <input type="password" id="pwd" name="password" />
+              <i class="fas fa-eye form__pswd--icon"></i>
+            </div>
+
+            <div class="form__checkbox-section">
+              <div>
+                <input type="checkbox" id="id" name="identity" value="Bike" />
+                <label for="id"> Remember me </label>
+              </div>
+              <h6>Forgot password?</h6>
+            </div>
+            <button class="form__button">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

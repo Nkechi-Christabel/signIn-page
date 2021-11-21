@@ -1,0 +1,103 @@
+.signIn__container {
+  width: 90%;
+  overflow-x: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  @media only screen and (max-width: 900px) {
+    height: 90%;
+  }
+}
+
+.signIn {
+  @media only screen and (min-width: 900px) {
+    display: flex;
+  }
+
+  &__title,
+  &__form {
+    padding: 3rem 2rem;
+  }
+
+  &__title {
+    @include flex;
+    flex: 2.5;
+    @include bg;
+
+    @media only screen and (min-width: 900px) {
+      padding: 8rem 6rem;
+    }
+
+    &-heading {
+      font-size: clamp(1rem, 8.333vw, 2.5rem);
+
+      @media only screen and (min-width: 900px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__form {
+    flex: 2;
+    background-color: $color-secondary;
+
+    @media only screen and (min-width: 900px) {
+      padding: 5rem 3rem;
+    }
+
+    &-heading {
+      padding: 1rem 0;
+    }
+  }
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.3rem 0 0.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+.form {
+  &__pswd {
+    position: relative;
+
+    &--icon {
+      position: absolute;
+      top: 1.3rem;
+      right: 1rem;
+    }
+  }
+
+  &__checkbox-section {
+    padding-top: 0.4rem;
+
+    @media only screen and (min-width: 335px) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h6 {
+      color: #6495ed;
+
+      @media only screen and (max-width: 335px) {
+        padding-top: 0.6rem;
+      }
+    }
+  }
+
+  &__button {
+    @include bg;
+    padding: 1rem;
+    margin: 1.2rem 0 0;
+    border: none;
+    border-radius: 3rem;
+    width: 100%;
+  }
+}
+
+.fas {
+  color: #ccc;
+}

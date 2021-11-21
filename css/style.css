@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.html,
+.body {
+  height: 100%; }
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif; }
+
+.signIn__container {
+  width: 90%;
+  overflow-x: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+  @media only screen and (max-width: 900px) {
+    .signIn__container {
+      height: 90%; } }
+
+@media only screen and (min-width: 900px) {
+  .signIn {
+    display: flex; } }
+
+.signIn__title, .signIn__form {
+  padding: 3rem 2rem; }
+
+.signIn__title {
+  display: flex;
+  align-items: center;
+  flex: 2.5;
+  background-color: #000f89;
+  color: #fff; }
+  @media only screen and (min-width: 900px) {
+    .signIn__title {
+      padding: 8rem 6rem; } }
+  .signIn__title-heading {
+    font-size: clamp(1rem, 8.333vw, 2.5rem); }
+    @media only screen and (min-width: 900px) {
+      .signIn__title-heading {
+        width: 50%; } }
+
+.signIn__form {
+  flex: 2;
+  background-color: #fff; }
+  @media only screen and (min-width: 900px) {
+    .signIn__form {
+      padding: 5rem 3rem; } }
+  .signIn__form-heading {
+    padding: 1rem 0; }
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  margin: 0.3rem 0 0.7rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  outline: none; }
+
+.form__pswd {
+  position: relative; }
+  .form__pswd--icon {
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem; }
+
+.form__checkbox-section {
+  padding-top: 0.4rem; }
+  @media only screen and (min-width: 335px) {
+    .form__checkbox-section {
+      display: flex;
+      justify-content: space-between; } }
+  .form__checkbox-section h6 {
+    color: #6495ed; }
+    @media only screen and (max-width: 335px) {
+      .form__checkbox-section h6 {
+        padding-top: 0.6rem; } }
+
+.form__button {
+  background-color: #000f89;
+  color: #fff;
+  padding: 1rem;
+  margin: 1.2rem 0 0;
+  border: none;
+  border-radius: 3rem;
+  width: 100%; }
+
+.fas {
+  color: #ccc; }
